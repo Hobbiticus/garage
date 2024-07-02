@@ -15,7 +15,7 @@
 #define SENSOR_PIN_1 14
 #define SENSOR_PIN_2 12
 
-#define ENABLE_DEBUGGING
+//#define ENABLE_DEBUGGING
 #ifdef ENABLE_DEBUGGING
 
 //socket debugging
@@ -164,6 +164,7 @@ void loop()
     {
       //both doors are closed - nothing to do
       //TODO: deep sleep....forever? or until next close time?
+      delay(60 * 5 * 1000);
       return;
     }
     //allow the doors to stay open for a bit
